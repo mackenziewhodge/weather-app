@@ -4,30 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather app</title>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="text" placeholder="Enter a city..." id="" autofocus />
-        <input type="submit" value="Search" />
-      </form>
-      <span id="current-time">Last updated at 00:00</span>
-    </header>
-    <main>
-      <h1>CITY NAME</h1>
-      <span id="weather-unit">C|F</span>
-      <div id="weather-icon">🌞</div>
-      <div id="weather-temperature">20</div>
-      <div id="weather-current-condition">CLOUDY</div>
+    <div class="container-main">
+      <div class="search-header">
+        <header>
+          <form>
+            <input type="text" placeholder="Enter a city..." id="" autofocus />
+            <input type="submit" value="Search" />
+          </form>
+          <span id="current-time">Last updated 00:00</span>
+        </header>
+      </div>
 
-      <ul class="weather-condition-list">
-        <li>feels like</li>
-        <li>wind</li>
-        <li>precipitation</li>
-        <li>air quality</li>
-      </ul>
+      <div class="current-weather">
+        <h1>CITY NAME</h1>
+        <span id="weather-unit">C|F</span>
+        <div id="weather-icon">🌞</div>
+        <div id="weather-temperature">20</div>
+        <div id="weather-current-condition">CLOUDY</div>
 
-      <div id="forecast">
+        <ul class="weather-condition-list">
+          <li>feels like</li>
+          <li>wind</li>
+          <li>precipitation</li>
+          <li>air quality</li>
+        </ul>
+      </div>
+
+      <div class="container-forecast">
         <h3>forecast</h3>
         <ul class="forcast-week">
           <li>Mon☁️20/15</li>
@@ -39,14 +45,17 @@
           <li>Sun 🌤️ 20/15</li>
         </ul>
       </div>
-    </main>
-    <footer>
-      this page was coded by
-      <a href="https://github.com/mackenziewhodge">Mackenzie Hodge</a>,
-      opensource code on
-      <a href="https://github.com/mackenziewhodge/weather-app.git">GitHub</a>
-      hosted by
-      <a href="https://bright-piroshki-2c3563.netlify.app/">Netlify</a>
-    </footer>
+    </div>
+
+    <div class="container-foot">
+      <footer>
+        this page was coded by
+        <a href="https://github.com/mackenziewhodge">Mackenzie Hodge</a>,
+        opensource code on
+        <a href="https://github.com/mackenziewhodge/weather-app.git">GitHub</a>
+        hosted by
+        <a href="https://bright-piroshki-2c3563.netlify.app/">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
