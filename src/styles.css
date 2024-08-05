@@ -7,9 +7,15 @@ header {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(30, 28, 28, 0.3);
+  border-bottom: 1px solid rgba(30, 28, 28, 0.2);
 }
-
+li{
+  list-style: none;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
 
 .container-main {
   background-color: rgba(255, 255, 255, 0.8);
@@ -18,11 +24,6 @@ header {
   box-shadow: 0 30px 50px rgba(44, 97, 86, 0.1);
   margin: 30px auto;
   padding: 5px;
-}
-
-.current-weather {
-  display: flex;
-  justify-content: space-between;
 }
 
 .container-forecast {
@@ -45,4 +46,28 @@ header {
   margin: 30px auto;
   padding: 5px;
 
+}
+
+.search-input{
+ width: 65%;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+
+.search-btn{
+  color:#fff;
+  background-color: rgb(91, 183, 152) ;
+  border:1px solid rgb(91, 183, 152);
+  transition:all 200ms ease-in-out;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+.search-btn:hover{
+
+  background: rgba(255, 255, 255, 0.8);
+  color: rgb(91, 183, 152);
+  cursor: pointer;
 }
