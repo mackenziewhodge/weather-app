@@ -95,14 +95,15 @@ li{
 margin-top: 20px;}
 
 .weather-icon{
-  height:80px;
-  width: 80px;
+
+  height:50px;
+  width: 50px;
 }
 .weather-temperature{
-font-size:80px;
+  margin-top: 20px;
+font-size:55px;
 font-weight: bold;
-
-line-height: 80px;
+line-height: 55px;
 }
 
 .weather-current-condition{
@@ -110,7 +111,7 @@ font-size: 18px;
 
 }
 .weather-temperature-unit{
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 16px;
 }
 
