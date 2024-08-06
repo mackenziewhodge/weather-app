@@ -72,12 +72,12 @@ li{
   margin-top: 20px;
 }
 .weather-icon{
-  height:50px;
-  width: 50px;
+  height:68px;
+  width: 68px;
 }
 .weather-temperature{
   margin-top: 20px;
-  font-size:55px;
+  font-size:50px;
   font-weight: bold;
   line-height: 55px;
 }
@@ -98,8 +98,8 @@ li{
   line-height: 20px;
 }
 .weather-forecast-icon{
-  height:88px;
-  width:88px;
+  height:68px;
+  width:68px;
   display:block;
   margin:0 auto;
 }
