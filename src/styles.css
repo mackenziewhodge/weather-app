@@ -55,7 +55,7 @@ li{
 }
 
 .search-input{
- width: 60%;
+ width: 50%;
  color:rgb(77, 95, 91);
   border: none;
   padding: 5px;
@@ -85,6 +85,10 @@ li{
   left:10px;
   font-size: 14px;
 
+}
+
+.time-stamp{
+  font-size: 14px;
 }
 .current-weather-temperature {
   display: flex;
