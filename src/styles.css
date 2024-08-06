@@ -27,14 +27,14 @@ li{
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(44, 97, 86, 0.1);
-  margin: 30px auto;
-  padding: 15px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 .container-forecast {
   background-color: rgba(255, 255, 255, 0.8);
   max-width: 600px;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 5px 20px 30px 20px;
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(44, 97, 86, 0.1);
@@ -126,8 +126,10 @@ font-size: 18px;
 }
 
 .weather-forecast-icon{
-  font-size:38px;
-  text-align: center;
+  height:88px;
+  width:88px;
+  display:block;
+  margin:0 auto;
 }
 .weather-forecast-temperatures{
   color: rgb(91, 183, 152);
