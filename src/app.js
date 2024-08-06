@@ -2,10 +2,17 @@
 function updateWeatherData(response){
 let updateTemperature=document.querySelector("#update-temperature")
  let cityElement=document.querySelector("#weather-city");
-  
-cityElement.innerHTML=response.data.city
-updateTemperature.innerHTML = Math.round(response.data.temperature.current)
+ let descriptionElement=document.querySelector("#weather-current-condition");
+ let feelsLike=document.querySelector("#feels-like");
+ let windSpeed=document.querySelector("#wind-speed");
+ let humidity=document.querySelector("#humidity");
 
+cityElement.innerHTML=response.data.city
+descriptionElement.innerHTML = response.data.condition.description
+updateTemperature.innerHTML = Math.round(response.data.temperature.current)
+feelsLike.innerHTML=Math.round(response.data.temperature.feels_like)
+windSpeed.innerHTML=Math.round(response.data.wind.speed)
+humidity.innerHTML=response.data.temperature.humidity
 }
 
 
@@ -27,4 +34,21 @@ let searchFormElement = document.querySelector("#search-form");
 
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("glasgow")
+function formatTimeStamp(time){
+  
+let hours = time.getHours();
+let minutes = time.getMinutes();
+if (minutes <10) {
+    minutes = `0${minutes}`;
+  }
+if (hours <10) {
+    hours  = `0${hours}`;
+  }
+return ` ${hours}:${minutes}`
+
+}
+let currentTime= new Date();
+let timeStamp=document.querySelector("#current-time")
+timeStamp.innerHTML= formatTimeStamp(currentTime);
+  
+  searchCity("glasgow")

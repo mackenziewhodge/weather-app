@@ -26,7 +26,9 @@
           />
           <input type="submit" value="Search" class="search-btn" />
         </form>
-        <span id="current-time">Last updated 00:00</span>
+        <span id="time-stamp"
+          >Last updated <span id="current-time"> 00:00</span></span
+        >
       </header>
 
       <div class="current-weather">
@@ -39,9 +41,13 @@
           <span class="weather-temperature-unit">°C</span>
         </div>
       </div>
-      <div class="weather-current-condition"></div>
+      <div
+        class="weather-current-condition"
+        id="weather-current-condition"
+      ></div>
       <p class="weather-condition-details">
-        feels like, wind, precipitation, air quality
+        Feels like : <span id="feels-like"></span> , Windspeed:
+        <span id="wind-speed"></span> , Humidity : <span id="humidity"></span>%
       </p>
     </div>
     <div class="container-forecast">
