@@ -6,7 +6,10 @@ let updateTemperature=document.querySelector("#update-temperature")
  let feelsLike=document.querySelector("#feels-like");
  let windSpeed=document.querySelector("#wind-speed");
  let humidity=document.querySelector("#humidity");
+let iconElement = document.querySelector("#icon");
 
+ console.log(response.data)
+ iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 cityElement.innerHTML=response.data.city
 descriptionElement.innerHTML = response.data.condition.description
 updateTemperature.innerHTML = Math.round(response.data.temperature.current)
@@ -14,7 +17,6 @@ feelsLike.innerHTML=Math.round(response.data.temperature.feels_like)
 windSpeed.innerHTML=Math.round(response.data.wind.speed)
 humidity.innerHTML=response.data.temperature.humidity
 }
-
 
 function searchCity(city){
 let apiKey="9f6b8bcf34c1t0b4fa7o41dfc57380a8"
@@ -52,3 +54,4 @@ let timeStamp=document.querySelector("#current-time")
 timeStamp.innerHTML= formatTimeStamp(currentTime);
   
   searchCity("glasgow")
+ 
